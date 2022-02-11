@@ -15,7 +15,7 @@ class UserManager(BaseUserManager):
 
         return user
 
-    def create_super_user(self, email, password, **extra_fields):
+    def create_superuser(self, email, password, **extra_fields):
         """Creates super user"""
         if not email:
             raise ValueError("email is require")
